@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WAGraphCell" id="hzS-Ch-1FB" customClass="WAGraphCell" customModule="WAFair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XOt-sD-ubG">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bo-UN-J3J" customClass="ScrollableGraphView" customModule="WAFair" customModuleProvider="target">
+                        <rect key="frame" x="8" y="0.0" width="398" height="300"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundFillColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0AI-dN-WKw">
+                        <rect key="frame" x="301" y="8" width="105" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="THs-Yl-dXm"/>
+                        </constraints>
+                        <segments>
+                            <segment title="" image="Temperature"/>
+                            <segment title="" image="Wind"/>
+                            <segment title="" image="Humiditys"/>
+                        </segments>
+                        <color key="selectedSegmentTintColor" red="0.87058823529999996" green="0.43529411759999997" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </segmentedControl>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9bo-UN-J3J" firstAttribute="leading" secondItem="XOt-sD-ubG" secondAttribute="leading" constant="8" id="5gq-sy-3jM"/>
+                    <constraint firstItem="0AI-dN-WKw" firstAttribute="top" secondItem="XOt-sD-ubG" secondAttribute="top" constant="8" id="8k0-rN-HCK"/>
+                    <constraint firstAttribute="bottom" secondItem="9bo-UN-J3J" secondAttribute="bottom" id="Gku-N7-FBQ"/>
+                    <constraint firstItem="9bo-UN-J3J" firstAttribute="top" secondItem="XOt-sD-ubG" secondAttribute="top" id="IMS-Fe-KHb"/>
+                    <constraint firstAttribute="trailing" secondItem="0AI-dN-WKw" secondAttribute="trailing" constant="8" id="NGJ-iv-od3"/>
+                    <constraint firstAttribute="trailing" secondItem="9bo-UN-J3J" secondAttribute="trailing" constant="8" id="rEL-kI-sAg"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="graphView" destination="9bo-UN-J3J" id="pmH-aO-GJV"/>
+                <outlet property="segementControl" destination="0AI-dN-WKw" id="ivS-KN-bOg"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="-46"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Humiditys" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="Temperature" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Wind" width="42.666667938232422" height="42.666667938232422"/>
+    </resources>
+</document>

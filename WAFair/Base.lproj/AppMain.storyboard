@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uh1-jV-EPP">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1Tp-PP-4GM">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uh1-jV-EPP" customClass="ViewController" customModule="WAFair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s5e-ga-ZYP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City name." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UAl-F5-wHC">
+                                <rect key="frame" x="16" y="16" width="290" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uh1-jV-EPP" id="3Ac-mg-HAl"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSd-Y7-zcX">
+                                <rect key="frame" x="314" y="5" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="HaM-Z6-t0B"/>
+                                    <constraint firstAttribute="height" constant="45" id="mrA-OS-kVj"/>
+                                </constraints>
+                                <state key="normal" image="Date"/>
+                                <connections>
+                                    <action selector="selectDate:" destination="uh1-jV-EPP" eventType="touchUpInside" id="wBK-JT-RpQ"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iRZ-27-yYR" customClass="WACollectionView" customModule="WAFair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LYK-K2-QGD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-LG-a9n">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roe-XF-aky">
+                                <rect key="frame" x="0.0" y="667" width="375" height="260"/>
+                                <subviews>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="R7c-Z9-gTk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="XGc-x5-D1w"/>
+                                        </constraints>
+                                        <items>
+                                            <barButtonItem title="Cancel" id="lBz-aa-30N">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="pickerCancel" destination="uh1-jV-EPP" id="uJ8-zz-mDe"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="7ya-Qn-EAG"/>
+                                            <barButtonItem title="Done" style="done" id="9gk-5G-20f">
+                                                <color key="tintColor" red="1" green="0.55435383439999997" blue="0.19921875" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="pickerDone" destination="uh1-jV-EPP" id="ybB-Gg-rcd"/>
+                                                </connections>
+                                            </barButtonItem>
+                                        </items>
+                                    </toolbar>
+                                    <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="A4I-A3-ocd">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="valueChanged:" destination="uh1-jV-EPP" eventType="valueChanged" id="ssc-i1-E9c"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="6Op-yV-8B3"/>
+                                    <constraint firstItem="R7c-Z9-gTk" firstAttribute="leading" secondItem="Roe-XF-aky" secondAttribute="leading" id="Ldb-JW-KmK"/>
+                                    <constraint firstAttribute="bottom" secondItem="A4I-A3-ocd" secondAttribute="bottom" id="UEJ-Pc-jPW"/>
+                                    <constraint firstItem="A4I-A3-ocd" firstAttribute="top" secondItem="Roe-XF-aky" secondAttribute="top" constant="44" id="XLG-zz-UHq"/>
+                                    <constraint firstItem="R7c-Z9-gTk" firstAttribute="top" secondItem="Roe-XF-aky" secondAttribute="top" id="YQV-fd-WNd"/>
+                                    <constraint firstAttribute="trailing" secondItem="R7c-Z9-gTk" secondAttribute="trailing" id="g1Z-vI-w7w"/>
+                                    <constraint firstAttribute="trailing" secondItem="A4I-A3-ocd" secondAttribute="trailing" id="uGy-QJ-Shw"/>
+                                    <constraint firstItem="A4I-A3-ocd" firstAttribute="leading" secondItem="Roe-XF-aky" secondAttribute="leading" id="uap-oT-xsH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VSd-Y7-zcX" firstAttribute="leading" secondItem="UAl-F5-wHC" secondAttribute="trailing" constant="8" id="0Gx-M3-VqD"/>
+                            <constraint firstItem="iRZ-27-yYR" firstAttribute="top" secondItem="UAl-F5-wHC" secondAttribute="bottom" constant="8" id="21n-Gn-gtP"/>
+                            <constraint firstItem="iRZ-27-yYR" firstAttribute="leading" secondItem="07a-wb-fJa" secondAttribute="leading" id="2oR-21-gAr"/>
+                            <constraint firstItem="iRZ-27-yYR" firstAttribute="trailing" secondItem="07a-wb-fJa" secondAttribute="trailing" id="3Kc-gM-UHl"/>
+                            <constraint firstItem="ySt-LG-a9n" firstAttribute="centerY" secondItem="s5e-ga-ZYP" secondAttribute="centerY" id="97b-St-n5r"/>
+                            <constraint firstItem="VSd-Y7-zcX" firstAttribute="top" secondItem="07a-wb-fJa" secondAttribute="top" constant="5" id="HHz-q2-vnd"/>
+                            <constraint firstItem="Roe-XF-aky" firstAttribute="trailing" secondItem="07a-wb-fJa" secondAttribute="trailing" id="Ihd-NP-7ny"/>
+                            <constraint firstItem="07a-wb-fJa" firstAttribute="trailing" secondItem="VSd-Y7-zcX" secondAttribute="trailing" constant="16" id="MP7-Dy-zmq"/>
+                            <constraint firstItem="UAl-F5-wHC" firstAttribute="top" secondItem="07a-wb-fJa" secondAttribute="top" constant="16" id="PvZ-2y-Okv"/>
+                            <constraint firstItem="Roe-XF-aky" firstAttribute="leading" secondItem="07a-wb-fJa" secondAttribute="leading" id="etZ-1p-Y3L"/>
+                            <constraint firstItem="ySt-LG-a9n" firstAttribute="centerX" secondItem="s5e-ga-ZYP" secondAttribute="centerX" id="feO-wQ-55x"/>
+                            <constraint firstItem="iRZ-27-yYR" firstAttribute="bottom" secondItem="07a-wb-fJa" secondAttribute="bottom" id="kyz-D7-FQl"/>
+                            <constraint firstItem="Roe-XF-aky" firstAttribute="bottom" secondItem="07a-wb-fJa" secondAttribute="bottom" constant="260" id="vpq-f5-G0r"/>
+                            <constraint firstItem="UAl-F5-wHC" firstAttribute="leading" secondItem="07a-wb-fJa" secondAttribute="leading" constant="16" id="xcw-P6-gTC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="07a-wb-fJa"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ySt-LG-a9n" id="eVM-wr-dlE"/>
+                        <outlet property="cityTopAnchor" destination="PvZ-2y-Okv" id="G2c-u0-rsD"/>
+                        <outlet property="cityTxtField" destination="UAl-F5-wHC" id="Q9x-0g-lcC"/>
+                        <outlet property="collectionView" destination="iRZ-27-yYR" id="AUY-be-jNZ"/>
+                        <outlet property="dateButton" destination="VSd-Y7-zcX" id="CF9-h8-o7r"/>
+                        <outlet property="datePicker" destination="A4I-A3-ocd" id="H9N-mN-NOi"/>
+                        <outlet property="pickerBottomConstraint" destination="vpq-f5-G0r" id="4ff-tL-SfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gld-P0-MvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Date" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>

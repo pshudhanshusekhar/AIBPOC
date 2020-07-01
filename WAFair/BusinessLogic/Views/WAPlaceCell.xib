@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WAPlaceCell" id="IA5-rc-02v" customClass="WAPlaceCell" customModule="WAFair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p5R-I5-zQT">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK3-B4-fOO">
+                        <rect key="frame" x="16" y="8" width="274" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="AjI-UV-BM5"/>
+                            <constraint firstAttribute="height" constant="25" id="Nok-gK-G1s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L02-8G-lQV">
+                        <rect key="frame" x="61" y="41" width="229" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Jss-4J-n8s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9w-XE-Del">
+                        <rect key="frame" x="8" y="33" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="fMT-iz-uB6"/>
+                            <constraint firstAttribute="width" constant="45" id="rDX-d5-Wtm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-TE-ges">
+                        <rect key="frame" x="298" y="16" width="100" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0Dp-y8-bAv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-fu-IFD">
+                        <rect key="frame" x="298" y="32" width="100" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Yan-Tq-uzG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-hc-taG">
+                        <rect key="frame" x="8" y="86" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9z5-je-C1g"/>
+                            <constraint firstAttribute="height" constant="21" id="DQY-Bp-VG7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c9w-XE-Del" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="8" id="5QN-8d-aQy"/>
+                    <constraint firstItem="PZE-TE-ges" firstAttribute="leading" secondItem="DK3-B4-fOO" secondAttribute="trailing" constant="8" id="6iL-83-i5E"/>
+                    <constraint firstItem="c9w-XE-Del" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" id="8K3-Pw-Dfq"/>
+                    <constraint firstItem="L02-8G-lQV" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" constant="8" id="C6q-xD-cbD"/>
+                    <constraint firstAttribute="trailing" secondItem="PZE-TE-ges" secondAttribute="trailing" constant="16" id="CR7-qa-RvO"/>
+                    <constraint firstItem="XWC-fu-IFD" firstAttribute="leading" secondItem="PZE-TE-ges" secondAttribute="leading" id="F4V-mR-qV4"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="b2w-hc-taG" secondAttribute="bottom" constant="8" id="SEV-5p-uRw"/>
+                    <constraint firstItem="b2w-hc-taG" firstAttribute="top" secondItem="c9w-XE-Del" secondAttribute="bottom" constant="8" id="WJJ-h5-W4e"/>
+                    <constraint firstItem="XWC-fu-IFD" firstAttribute="top" secondItem="PZE-TE-ges" secondAttribute="bottom" constant="16" id="WKD-j1-XkL"/>
+                    <constraint firstAttribute="trailing" secondItem="XWC-fu-IFD" secondAttribute="trailing" constant="16" id="daE-Lp-ipP"/>
+                    <constraint firstItem="DK3-B4-fOO" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="16" id="hJc-TT-R9Q"/>
+                    <constraint firstItem="DK3-B4-fOO" firstAttribute="top" secondItem="p5R-I5-zQT" secondAttribute="top" constant="8" id="nAr-Cb-qyL"/>
+                    <constraint firstItem="L02-8G-lQV" firstAttribute="trailing" secondItem="DK3-B4-fOO" secondAttribute="trailing" id="tM2-b7-lW0"/>
+                    <constraint firstItem="L02-8G-lQV" firstAttribute="leading" secondItem="c9w-XE-Del" secondAttribute="trailing" constant="8" id="xuK-Mq-nYr"/>
+                    <constraint firstItem="b2w-hc-taG" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="8" id="z04-OV-e8a"/>
+                    <constraint firstItem="PZE-TE-ges" firstAttribute="top" secondItem="p5R-I5-zQT" secondAttribute="top" constant="16" id="zIQ-lH-5i9"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="359" height="141"/>
+            <connections>
+                <outlet property="cityName" destination="DK3-B4-fOO" id="ckS-2M-VpL"/>
+                <outlet property="citySunRise" destination="PZE-TE-ges" id="h4h-6B-V1d"/>
+                <outlet property="citySunSet" destination="XWC-fu-IFD" id="tHw-c2-aeV"/>
+                <outlet property="cityTemp" destination="L02-8G-lQV" id="xAN-5S-5RN"/>
+                <outlet property="cityWeatherDesc" destination="b2w-hc-taG" id="s7e-wh-jod"/>
+                <outlet property="icon" destination="c9w-XE-Del" id="h47-B2-OIH"/>
+            </connections>
+            <point key="canvasLocation" x="13.043478260869566" y="-68.303571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>
