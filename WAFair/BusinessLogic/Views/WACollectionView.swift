@@ -63,7 +63,7 @@ extension WACollectionView : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if let _ = weatherObject {
-            let width = collectionView.frame.width
+            let width = collectionView.bounds.width
             var height = CGFloat(0)
             switch indexPath.row {
             case 0:

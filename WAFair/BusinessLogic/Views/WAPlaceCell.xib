@@ -16,78 +16,90 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK3-B4-fOO">
-                        <rect key="frame" x="16" y="8" width="274" height="25"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQ2-3k-NHB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DK3-B4-fOO">
+                                <rect key="frame" x="8" y="16" width="290" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="196" id="3B4-j8-aZb"/>
+                                    <constraint firstAttribute="height" constant="25" id="Nh4-LA-D7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L02-8G-lQV">
+                                <rect key="frame" x="61" y="49" width="237" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="o3E-8G-VvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9w-XE-Del">
+                                <rect key="frame" x="8" y="41" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="0E9-Fc-JH5"/>
+                                    <constraint firstAttribute="height" constant="45" id="QyH-3g-Wmh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-TE-ges">
+                                <rect key="frame" x="306" y="16" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1Ih-X3-eQY"/>
+                                    <constraint firstAttribute="height" constant="25" id="vLS-Eu-6Ef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-fu-IFD">
+                                <rect key="frame" x="306" y="49" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sh5-SL-Sga"/>
+                                    <constraint firstAttribute="height" constant="25" id="vVG-v1-A9K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-hc-taG">
+                                <rect key="frame" x="8" y="94" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AeU-ug-ygl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="274" id="AjI-UV-BM5"/>
-                            <constraint firstAttribute="height" constant="25" id="Nok-gK-G1s"/>
+                            <constraint firstAttribute="trailing" secondItem="PZE-TE-ges" secondAttribute="trailing" constant="8" id="0qr-MN-x6I"/>
+                            <constraint firstItem="b2w-hc-taG" firstAttribute="top" secondItem="c9w-XE-Del" secondAttribute="bottom" constant="8" id="96b-uM-Mcg"/>
+                            <constraint firstItem="PZE-TE-ges" firstAttribute="top" secondItem="hQ2-3k-NHB" secondAttribute="top" constant="16" id="A1n-ih-gdK"/>
+                            <constraint firstItem="L02-8G-lQV" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" constant="8" id="Isn-so-oV7"/>
+                            <constraint firstItem="c9w-XE-Del" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" id="LhZ-GA-wam"/>
+                            <constraint firstItem="DK3-B4-fOO" firstAttribute="leading" secondItem="hQ2-3k-NHB" secondAttribute="leading" constant="8" id="MQK-7v-ssC"/>
+                            <constraint firstItem="XWC-fu-IFD" firstAttribute="top" secondItem="PZE-TE-ges" secondAttribute="bottom" constant="8" id="MWN-Ig-SI6"/>
+                            <constraint firstAttribute="trailing" secondItem="XWC-fu-IFD" secondAttribute="trailing" constant="8" id="WY4-7P-Ivo"/>
+                            <constraint firstItem="PZE-TE-ges" firstAttribute="leading" secondItem="DK3-B4-fOO" secondAttribute="trailing" priority="750" constant="8" id="Wq4-go-oYM"/>
+                            <constraint firstItem="L02-8G-lQV" firstAttribute="leading" secondItem="c9w-XE-Del" secondAttribute="trailing" constant="8" id="YBb-LI-zgG"/>
+                            <constraint firstItem="L02-8G-lQV" firstAttribute="trailing" secondItem="DK3-B4-fOO" secondAttribute="trailing" id="alu-kQ-YZx"/>
+                            <constraint firstItem="XWC-fu-IFD" firstAttribute="leading" secondItem="PZE-TE-ges" secondAttribute="leading" id="qFX-X1-M7s"/>
+                            <constraint firstItem="DK3-B4-fOO" firstAttribute="top" secondItem="hQ2-3k-NHB" secondAttribute="top" constant="16" id="vbh-CJ-Uot"/>
+                            <constraint firstItem="b2w-hc-taG" firstAttribute="leading" secondItem="hQ2-3k-NHB" secondAttribute="leading" constant="8" id="xXI-ld-ChV"/>
+                            <constraint firstItem="c9w-XE-Del" firstAttribute="leading" secondItem="hQ2-3k-NHB" secondAttribute="leading" constant="8" id="zDF-7B-ccw"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L02-8G-lQV">
-                        <rect key="frame" x="61" y="41" width="229" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="Jss-4J-n8s"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9w-XE-Del">
-                        <rect key="frame" x="8" y="33" width="45" height="45"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="45" id="fMT-iz-uB6"/>
-                            <constraint firstAttribute="width" constant="45" id="rDX-d5-Wtm"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-TE-ges">
-                        <rect key="frame" x="298" y="16" width="100" height="0.0"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="0Dp-y8-bAv"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-fu-IFD">
-                        <rect key="frame" x="298" y="32" width="100" height="0.0"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="Yan-Tq-uzG"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2w-hc-taG">
-                        <rect key="frame" x="8" y="86" width="0.0" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="9z5-je-C1g"/>
-                            <constraint firstAttribute="height" constant="21" id="DQY-Bp-VG7"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="c9w-XE-Del" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="8" id="5QN-8d-aQy"/>
-                    <constraint firstItem="PZE-TE-ges" firstAttribute="leading" secondItem="DK3-B4-fOO" secondAttribute="trailing" constant="8" id="6iL-83-i5E"/>
-                    <constraint firstItem="c9w-XE-Del" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" id="8K3-Pw-Dfq"/>
-                    <constraint firstItem="L02-8G-lQV" firstAttribute="top" secondItem="DK3-B4-fOO" secondAttribute="bottom" constant="8" id="C6q-xD-cbD"/>
-                    <constraint firstAttribute="trailing" secondItem="PZE-TE-ges" secondAttribute="trailing" constant="16" id="CR7-qa-RvO"/>
-                    <constraint firstItem="XWC-fu-IFD" firstAttribute="leading" secondItem="PZE-TE-ges" secondAttribute="leading" id="F4V-mR-qV4"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="b2w-hc-taG" secondAttribute="bottom" constant="8" id="SEV-5p-uRw"/>
-                    <constraint firstItem="b2w-hc-taG" firstAttribute="top" secondItem="c9w-XE-Del" secondAttribute="bottom" constant="8" id="WJJ-h5-W4e"/>
-                    <constraint firstItem="XWC-fu-IFD" firstAttribute="top" secondItem="PZE-TE-ges" secondAttribute="bottom" constant="16" id="WKD-j1-XkL"/>
-                    <constraint firstAttribute="trailing" secondItem="XWC-fu-IFD" secondAttribute="trailing" constant="16" id="daE-Lp-ipP"/>
-                    <constraint firstItem="DK3-B4-fOO" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="16" id="hJc-TT-R9Q"/>
-                    <constraint firstItem="DK3-B4-fOO" firstAttribute="top" secondItem="p5R-I5-zQT" secondAttribute="top" constant="8" id="nAr-Cb-qyL"/>
-                    <constraint firstItem="L02-8G-lQV" firstAttribute="trailing" secondItem="DK3-B4-fOO" secondAttribute="trailing" id="tM2-b7-lW0"/>
-                    <constraint firstItem="L02-8G-lQV" firstAttribute="leading" secondItem="c9w-XE-Del" secondAttribute="trailing" constant="8" id="xuK-Mq-nYr"/>
-                    <constraint firstItem="b2w-hc-taG" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" constant="8" id="z04-OV-e8a"/>
-                    <constraint firstItem="PZE-TE-ges" firstAttribute="top" secondItem="p5R-I5-zQT" secondAttribute="top" constant="16" id="zIQ-lH-5i9"/>
+                    <constraint firstItem="hQ2-3k-NHB" firstAttribute="top" secondItem="p5R-I5-zQT" secondAttribute="top" id="CMf-wo-HJm"/>
+                    <constraint firstItem="hQ2-3k-NHB" firstAttribute="leading" secondItem="p5R-I5-zQT" secondAttribute="leading" id="Ncm-Vk-syX"/>
+                    <constraint firstAttribute="bottom" secondItem="hQ2-3k-NHB" secondAttribute="bottom" id="PiP-3M-sMG"/>
+                    <constraint firstAttribute="trailing" secondItem="hQ2-3k-NHB" secondAttribute="trailing" id="qXA-cB-UXW"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
